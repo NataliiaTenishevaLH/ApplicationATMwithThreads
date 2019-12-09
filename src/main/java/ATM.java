@@ -14,7 +14,7 @@ public class ATM {
     }
 
     //Пополнение
-    public void  doReplenishment(double sum){
+    public synchronized void  doReplenishment(double sum){
         System.out.println("поток - пополнение - cумма " + sum);
         ammount += sum;
 
